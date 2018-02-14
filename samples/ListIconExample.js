@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Title, Right, Button, Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch } from 'native-base';
+import { Title, Button, Container, Header, Content, List, ListItem, Text, Icon, Left, Body, Right, Switch } from 'native-base';
 
 
 export default class ListIconExample extends Component {
@@ -14,12 +14,12 @@ export default class ListIconExample extends Component {
               </Left>
               <Body>
                     <Title>Ejemplo</Title>
-                  </Body>
-                  <Right>
+              </Body>
+              <Right>
                     <Button transparent>
                       <Icon name='menu' />
                     </Button>
-                  </Right>
+              </Right>
         </Header>
         <Content>
           <List>
