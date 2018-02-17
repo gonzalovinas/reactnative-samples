@@ -15,6 +15,8 @@ import {
 
 import ListIconExample from './ListIconExample';
 import FooterTabWithIcons from './FooterTabWithIcons';
+import UserProfile from './UserProfile';
+import FooterTabWithIconsWithUserProfile from './FooterTabWithIconsWithUserProfile';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -28,7 +30,9 @@ export default class App extends Component<Props> {
   render() {
     return (
       //<ListIconExample/>
-      <FooterTabWithIcons/>
+      //<FooterTabWithIcons/>
+      <FooterTabWithIconsWithUserProfile/>
+    //  <UserProfile/>
     );
   }
 }
