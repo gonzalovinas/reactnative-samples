@@ -39,7 +39,7 @@ export default class FooterTabWithIconsWithUserProfile extends Component {
       <Thumbnail source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/AdamWestCCJul2011.jpg/220px-AdamWestCCJul2011.jpg'}}  style={{ width: 200, height: 200, borderRadius: 200/2}}  />
       <Text style={{textAlign: 'center'}}>
       Bienvenido!
-      </Text>
+      </Te
       </Content>
 
 
@@ -59,7 +59,7 @@ export default class FooterTabWithIconsWithUserProfile extends Component {
               <Icon active name="navigate" />
               <Text style={{fontSize: 8}}>Elemento 3</Text>
             </Button>
-            <Button vertical>
+            <Button vertical  >
               <Icon name="person" />
               <Text style={{fontSize: 8}}>Ajustes</Text>
             </Button>
