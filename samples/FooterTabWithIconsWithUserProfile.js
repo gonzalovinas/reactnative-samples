@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+oimport React, { Component } from 'react';
 import { Container, Left, Thumbnail, Body, Title, Right, Header, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
 export default class FooterTabWithIconsWithUserProfile extends Component {
   render() {
@@ -39,7 +39,7 @@ export default class FooterTabWithIconsWithUserProfile extends Component {
       <Thumbnail source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/AdamWestCCJul2011.jpg/220px-AdamWestCCJul2011.jpg'}}  style={{ width: 200, height: 200, borderRadius: 200/2}}  />
       <Text style={{textAlign: 'center'}}>
       Bienvenido!
-      </Te
+      </Text>
       </Content>
 
 
