@@ -1,21 +1,40 @@
-import React, { Component } from 'react';
-import { Container, Header, Content, Form, Item, Input, Label } from 'native-base';
-export default class ZetaLogin extends Component {
+import React, { Image,  Component } from 'react';
+import { Container, Grid, Col, Text,  Button, Icon, Header, Content, Form, Item, Input, Label } from 'native-base';
+
+export default class Login extends Component {
   render() {
     return (
       <Container>
-        <Header />
+
         <Content>
+
+
           <Form>
-            <Item stackedLabel>
+
+            <Item floatingLabel>
+
               <Label>Username</Label>
               <Input />
             </Item>
-            <Item stackedLabel last>
+            <Item floatingLabel last>
               <Label>Password</Label>
               <Input />
             </Item>
+
           </Form>
+
+          <Content contentContainerStyle={{flex: 1}} style={{padding: 10}}>
+            <Grid style={{alignItems: 'center'}}>
+              <Col>
+                <Button block rounded >
+                  <Text>
+                    Ingresar
+                  </Text>
+                </Button>
+              </Col>
+            </Grid>
+         </Content>
+
         </Content>
       </Container>
     );
