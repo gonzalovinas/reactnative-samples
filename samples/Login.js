@@ -40,6 +40,7 @@ export default class Login extends Component {
 
                 </Form>
 
+
                 <Content contentContainerStyle={{flex: 1}} style={{paddingTop: 40}}>
                   <Grid style={{alignItems: 'center'}}>
                     <Col>

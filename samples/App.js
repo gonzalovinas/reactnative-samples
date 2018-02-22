@@ -33,9 +33,9 @@ export default class App extends Component<Props> {
     return (
       //<ListIconExample/>
       //<FooterTabWithIcons/>
-    //  <FooterTabWithIconsWithUserProfile/>
+    <FooterTabWithIconsWithUserProfile/>
     //  <UserProfile/>
-    <Login/>
+//  <Login/>
 
 
     );
@@ -59,4 +59,7 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  tab: {
+    backgroundColor: 'red'
+  }
 });

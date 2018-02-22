@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { Container, Left, Thumbnail, Body, Title, Right, Header, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
 export default class FooterTabWithIconsWithUserProfile extends Component {
   render() {
@@ -46,7 +47,7 @@ export default class FooterTabWithIconsWithUserProfile extends Component {
       </Container>
 
         <Footer>
-          <FooterTab >
+          <FooterTab  >
             <Button vertical>
               <Icon name="apps" />
               <Text style={{fontSize: 8}}>Elemento 1</Text>
@@ -68,4 +69,4 @@ export default class FooterTabWithIconsWithUserProfile extends Component {
       </Container>
     );
   }
-}
+};
