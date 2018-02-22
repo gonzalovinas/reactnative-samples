@@ -9,7 +9,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
 
@@ -35,6 +36,7 @@ export default class App extends Component<Props> {
     //  <FooterTabWithIconsWithUserProfile/>
     //  <UserProfile/>
     <Login/>
+
 
     );
   }

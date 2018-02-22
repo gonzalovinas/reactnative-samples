@@ -1,42 +1,62 @@
-import React, { Image,  Component } from 'react';
+import React, {  Component } from 'react';
+import {
+  Image,
+  ScrollView
+} from 'react-native'
+
 import { Container, Grid, Col, Text,  Button, Icon, Header, Content, Form, Item, Input, Label } from 'native-base';
 
 export default class Login extends Component {
   render() {
     return (
-      <Container>
-
-        <Content>
 
 
-          <Form>
 
-            <Item floatingLabel>
 
-              <Label>Username</Label>
-              <Input />
-            </Item>
-            <Item floatingLabel last>
-              <Label>Password</Label>
-              <Input />
-            </Item>
+        <ScrollView>
+            <Container>
+                <Content contentContainerStyle={{flex: 1}} >
+                  <Grid style={{alignItems: 'center'}}>
+                    <Col>
+                      <Image style={{ resizeMode: 'contain', alignSelf: 'center', width: 400, height: 800, alignItems:'center'}} source={{uri: 'http://www.aylinglobal.in/wp-content/uploads/2017/11/enterprise-logo-designing-services-1.png'}}/>
+                        </Col>
+                  </Grid>
+                </Content>
 
-          </Form>
 
-          <Content contentContainerStyle={{flex: 1}} style={{padding: 10}}>
-            <Grid style={{alignItems: 'center'}}>
-              <Col>
-                <Button block rounded >
-                  <Text>
-                    Ingresar
-                  </Text>
-                </Button>
-              </Col>
-            </Grid>
-         </Content>
+              <Content style={{padding: 30}}>
 
-        </Content>
-      </Container>
+                <Form>
+
+                  <Item floatingLabel>
+
+                    <Label>Usuario</Label>
+                    <Input />
+                  </Item>
+                  <Item floatingLabel last>
+                    <Label>Contraseña</Label>
+                    <Input />
+                  </Item>
+
+                </Form>
+
+                <Content contentContainerStyle={{flex: 1}} style={{paddingTop: 40}}>
+                  <Grid style={{alignItems: 'center'}}>
+                    <Col>
+                      <Button block backgroundColor="red" >
+                        <Text>
+                          Ingresar
+                        </Text>
+                      </Button>
+                    </Col>
+                  </Grid>
+               </Content>
+
+              </Content>
+
+              </Container>
+
+  </ScrollView>
     );
   }
 }
