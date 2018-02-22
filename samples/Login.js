@@ -48,7 +48,14 @@ export default class Login extends Component {
                           Ingresar
                         </Text>
                       </Button>
+
+                      <Button full transparent  >
+                        <Text style={{color: 'gray'}}>
+                          Olvide Mi Clave
+                        </Text>
+                      </Button>
                     </Col>
+
                   </Grid>
                </Content>
 
