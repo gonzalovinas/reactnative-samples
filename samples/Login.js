@@ -4,15 +4,13 @@ import {
   ScrollView
 } from 'react-native'
 
-import { Container, Grid, Col, Text,  Button, Icon, Header, Content, Form, Item, Input, Label } from 'native-base';
+import { AppNavigator, Root, Container, Toast, Grid, Col, Text,  Button, Icon, Header, Content, Form, Item, Input, Label } from 'native-base';
 
 export default class Login extends Component {
   render() {
     return (
 
-
-
-
+<Root>
         <ScrollView>
             <Container>
                 <Content contentContainerStyle={{flex: 1}} >
@@ -44,7 +42,13 @@ export default class Login extends Component {
                 <Content contentContainerStyle={{flex: 1}} style={{paddingTop: 40}}>
                   <Grid style={{alignItems: 'center'}}>
                     <Col>
-                      <Button block backgroundColor="red" >
+                      <Button block backgroundColor="red" onPress={()=> Toast.show({
+                                                    text: 'Credenciales Incorrectas',
+                                                    position: 'bottom',
+                                                    type: 'danger',
+                                                    buttonText: 'Aceptar',
+                                                    duration: 10 * 1000
+                                                  })}>
                         <Text>
                           Ingresar
                         </Text>
@@ -65,6 +69,7 @@ export default class Login extends Component {
               </Container>
 
   </ScrollView>
+  </Root>
     );
   }
 }

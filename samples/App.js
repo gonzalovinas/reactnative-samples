@@ -20,6 +20,11 @@ import UserProfile from './UserProfile';
 import FooterTabWithIconsWithUserProfile from './FooterTabWithIconsWithUserProfile';
 import Login from './Login';
 
+import {
+  StackNavigator,
+} from 'react-navigation';
+
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -27,20 +32,47 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+
+export default  App = StackNavigator({
+  Login: {
+    screen: Login,
+  },
+  FooterTabWithIconsWithUserProfile: {
+    screen: FooterTabWithIconsWithUserProfile,
+  }
+}, {
+    headerMode: 'none',
+    navigationOptions: {
+        headerVisible: false,
+    }
+});
+
+/*
+export default class  App extends React.Component {
+  render() {
+    return (
+      <Login/>
+    )
+  }
+};*/
+
 type Props = {};
+
+/*
 export default class App extends Component<Props> {
   render() {
     return (
       //<ListIconExample/>
       //<FooterTabWithIcons/>
-    <FooterTabWithIconsWithUserProfile/>
+//   <FooterTabWithIconsWithUserProfile/>
     //  <UserProfile/>
-//  <Login/>
+ <Login/>
 
 
     );
   }
 }
+*/
 
 const styles = StyleSheet.create({
   container: {
