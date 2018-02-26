@@ -42,13 +42,18 @@ export default class Login extends Component {
                 <Content contentContainerStyle={{flex: 1}} style={{paddingTop: 40}}>
                   <Grid style={{alignItems: 'center'}}>
                     <Col>
-                      <Button block backgroundColor="red" onPress={()=> Toast.show({
+                      <Button block backgroundColor="red" onPress={()=> {
+
+                                                this.props.navigation.navigate('FooterTabWithIconsWithUserProfile');
+
+                                                Toast.show({
                                                     text: 'Credenciales Incorrectas',
                                                     position: 'bottom',
                                                     type: 'danger',
                                                     buttonText: 'Aceptar',
                                                     duration: 10 * 1000
-                                                  })}>
+                                                  })}
+                                                }>
                         <Text>
                           Ingresar
                         </Text>

@@ -34,17 +34,18 @@ const instructions = Platform.select({
 
 
 export default  App = StackNavigator({
-  Login: {
-    screen: Login,
-  },
   FooterTabWithIconsWithUserProfile: {
     screen: FooterTabWithIconsWithUserProfile,
+  },
+  Login: {
+    screen: Login,
   }
 }, {
     headerMode: 'none',
     navigationOptions: {
         headerVisible: false,
-    }
+    },
+    initialRouteName: 'Login'
 });
 
 /*
