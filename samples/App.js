@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 
 
-import ListIconExample from './ListIconExample';
+
 import FooterTabWithIcons from './FooterTabWithIcons';
 import UserProfile from './UserProfile';
 import FooterTabWithIconsWithUserProfile from './FooterTabWithIconsWithUserProfile';

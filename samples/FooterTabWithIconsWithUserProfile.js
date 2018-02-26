@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import ConfigSample from './ConfigSample';
 
 import { Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
 export default class FooterTabWithIconsWithUserProfile extends Component {
+
 
   constructor() {
     super();
@@ -39,11 +41,7 @@ export default class FooterTabWithIconsWithUserProfile extends Component {
 
      case 'elemento4':
        return (
-          <Content>
-              <Text style={{textAlign: 'center'}}>
-               <H1>Elemnto 4</H1>
-              </Text>
-          </Content>
+          <ConfigSample/>
       );
 
     default:
