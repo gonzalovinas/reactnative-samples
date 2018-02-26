@@ -46,12 +46,14 @@ export default class FooterTabWithIconsWithUserProfile extends Component {
 
     default:
          return (
-            <Content>
+            <Container style={{alignItems: 'center'}}>
+            <Content >
                 <Thumbnail source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/AdamWestCCJul2011.jpg/220px-AdamWestCCJul2011.jpg'}}  style={{ width: 200, height: 200, borderRadius: 200/2}}  />
                 <Text style={{textAlign: 'center'}}>
                  <H1>Bienvenido!</H1>
                 </Text>
             </Content>
+            </Container>
         );
     }
   }
@@ -77,7 +79,7 @@ export default class FooterTabWithIconsWithUserProfile extends Component {
             </Right>
       </Header>
 
-      <Container style={{alignItems: 'center'}}>
+      <Container >
 
           {this.renderSelectedTab()}
 
