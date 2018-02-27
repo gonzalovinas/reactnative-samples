@@ -43,9 +43,14 @@ export default class Login extends Component {
                   <Grid style={{alignItems: 'center'}}>
                     <Col>
                       <Button block backgroundColor="red" onPress={()=> {
-
                                                 this.props.navigation.navigate('FooterTabWithIconsWithUserProfile');
+                                              }}>
+                        <Text>
+                          Ingresar
+                        </Text>
+                      </Button>
 
+                      <Button full transparent  onPress={()=> {
                                                 Toast.show({
                                                     text: 'Credenciales Incorrectas',
                                                     position: 'bottom',
@@ -54,12 +59,6 @@ export default class Login extends Component {
                                                     duration: 10 * 1000
                                                   })}
                                                 }>
-                        <Text>
-                          Ingresar
-                        </Text>
-                      </Button>
-
-                      <Button full transparent  >
                         <Text style={{color: 'gray'}}>
                           Olvide Mi Clave
                         </Text>
