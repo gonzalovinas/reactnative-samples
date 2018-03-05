@@ -19,6 +19,7 @@ import FooterTabWithIcons from './FooterTabWithIcons';
 import UserProfile from './UserProfile';
 import FooterTabWithIconsWithUserProfile from './FooterTabWithIconsWithUserProfile';
 import Login from './Login';
+import Seleccion from './Seleccion';
 
 import {
   StackNavigator,
@@ -39,6 +40,9 @@ export default  App = StackNavigator({
   },
   Login: {
     screen: Login,
+  },
+  Seleccion: {
+    screen: Seleccion,
   }
 }, {
     headerMode: 'none',

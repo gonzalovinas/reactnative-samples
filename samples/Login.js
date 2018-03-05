@@ -16,8 +16,8 @@ export default class Login extends Component {
                 <Content contentContainerStyle={{flex: 1}} >
                   <Grid style={{alignItems: 'center'}}>
                     <Col>
-                      <Image style={{ resizeMode: 'contain', alignSelf: 'center', width: 400, height: 800, alignItems:'center'}} source={{uri: 'http://www.aylinglobal.in/wp-content/uploads/2017/11/enterprise-logo-designing-services-1.png'}}/>
-                        </Col>
+                      <Image style={{ resizeMode: 'contain', alignSelf: 'center', width: 450, height: 800, alignItems:'center'}} source={{uri: 'http://www.aylinglobal.in/wp-content/uploads/2017/11/enterprise-logo-designing-services-1.png'}}/>
+                    </Col>
                   </Grid>
                 </Content>
 
@@ -43,7 +43,7 @@ export default class Login extends Component {
                   <Grid style={{alignItems: 'center'}}>
                     <Col>
                       <Button block backgroundColor="red" onPress={()=> {
-                                                this.props.navigation.navigate('FooterTabWithIconsWithUserProfile');
+                                                this.props.navigation.navigate('Seleccion');
                                               }}>
                         <Text>
                           Ingresar
