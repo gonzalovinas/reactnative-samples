@@ -18,6 +18,7 @@ import {
 import FooterTabWithIcons from './FooterTabWithIcons';
 import UserProfile from './UserProfile';
 import FooterTabWithIconsWithUserProfile from './FooterTabWithIconsWithUserProfile';
+import TabWithIconsWithUserProfile from './TabWithIconsWithUserProfile';
 import Login from './Login';
 import Seleccion from './Seleccion';
 
@@ -37,6 +38,9 @@ const instructions = Platform.select({
 export default  App = StackNavigator({
   FooterTabWithIconsWithUserProfile: {
     screen: FooterTabWithIconsWithUserProfile,
+  },
+  TabWithIconsWithUserProfile: {
+    screen: TabWithIconsWithUserProfile,
   },
   Login: {
     screen: Login,

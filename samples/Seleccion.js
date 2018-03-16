@@ -21,6 +21,14 @@ export default class Seleccion extends Component {
                 </Text>
               </Button>
 
+              <Button block backgroundColor="red" onPress={()=> {
+                                        this.props.navigation.navigate('TabWithIconsWithUserProfile');
+                                      }}>
+                <Text>
+                  Tabs
+                </Text>
+              </Button>
+
 
               </Content>
 
