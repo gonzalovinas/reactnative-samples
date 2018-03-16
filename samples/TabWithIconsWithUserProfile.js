@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import ConfigSample from './ConfigSample';
 
-import { Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Tabs, Tab,  Button, Icon, Text } from 'native-base';
-import Tab1 from './Tab1';
-import Tab2 from './Tab2';
+import { ScrollableTab, TabHeading, Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Tabs, Tab,  Button, Icon, Text } from 'native-base';
+import Tab1 from './SomeTab';
 
 
 export default class TabWithIconsWithUserProfile extends Component {
@@ -29,12 +28,16 @@ export default class TabWithIconsWithUserProfile extends Component {
             </Right>
       </Header>
 
-      <Tabs initialPage={0}>
+      <Tabs initialPage={0} tabBarPosition={'overlayTop'} >
         <Tab heading="Elemento 1">
           <Tab1 />
         </Tab>
-        <Tab heading="Elemento 2">
-          <Tab2 />
+        <Tab heading={ <TabHeading><Icon name="camera" /><Text>Camera</Text></TabHeading>}>
+            <Content>
+                <Text style={{textAlign: 'center'}}>
+                 <H1>Elemnto 2</H1>
+                </Text>
+            </Content>
         </Tab>
       </Tabs>
 
