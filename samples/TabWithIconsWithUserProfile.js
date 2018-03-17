@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import ConfigSample from './ConfigSample';
 
-import { ScrollableTab, TabHeading, Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Tabs, Tab,  Button, Icon, Text } from 'native-base';
+
+import getTheme from './native-base-theme/components';
+import rojo from './native-base-theme/variables/rojo';
+
+
+import { StyleProvider, ScrollableTab, TabHeading, Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Tabs, Tab,  Button, Icon, Text } from 'native-base';
 import Tab1 from './SomeTab';
 
 
@@ -9,6 +14,7 @@ export default class TabWithIconsWithUserProfile extends Component {
 
   render() {
     return (
+      <StyleProvider style={getTheme(rojo)}>
       <Container>
       <Header hasTabs>
       <Left>
@@ -21,7 +27,13 @@ export default class TabWithIconsWithUserProfile extends Component {
             </Body>
             <Right>
                   <Button transparent>
-                  <Badge info>
+                  <Icon style={{fontSize: 35}} name="phone" />
+                  </Button>
+                  <Button transparent>
+                  <Icon style={{fontSize: 35, fontFamily: "FontAwesome"}} name="qrcode" />
+                  </Button>
+                  <Button transparent>
+                  <Badge >
                        <Text>2</Text>
                      </Badge>
                   </Button>
@@ -43,6 +55,7 @@ export default class TabWithIconsWithUserProfile extends Component {
 
 
       </Container>
+      </StyleProvider>
     );
   }
 };
