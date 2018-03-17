@@ -10,9 +10,10 @@ render() {
   return (
       <Content>
           <Text style={{textAlign: 'center'}}>
-           <H1>Elemnto 1</H1>
+           <H1>Elemnto 1 (compartido)</H1>
           </Text>
       </Content>
   );
   }
 }
+ 

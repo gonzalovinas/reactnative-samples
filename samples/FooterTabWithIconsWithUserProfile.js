@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ConfigSample from './ConfigSample';
 
 import { Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
+import SomeTab from './SomeTab';
+
 export default class FooterTabWithIconsWithUserProfile extends Component {
 
 
@@ -14,11 +16,7 @@ export default class FooterTabWithIconsWithUserProfile extends Component {
     switch(this.state.selectedTab) {
         case 'elemento1':
           return (
-             <Content>
-                 <Text style={{textAlign: 'center'}}>
-                  <H1>Elemnto 1</H1>
-                 </Text>
-             </Content>
+             <SomeTab/>
          );
 
        case 'elemento2':

@@ -17,7 +17,7 @@ export default class Seleccion extends Component {
                                         this.props.navigation.navigate('FooterTabWithIconsWithUserProfile');
                                       }}>
                 <Text>
-                  Tabs iPhone
+                  Tabs iPhone (abajo)
                 </Text>
               </Button>
 
@@ -25,7 +25,15 @@ export default class Seleccion extends Component {
                                         this.props.navigation.navigate('TabWithIconsWithUserProfile');
                                       }}>
                 <Text>
-                  Tabs Android
+                  Tabs Android (arriba)
+                </Text>
+              </Button>
+
+              <Button block backgroundColor="blue" onPress={()=> {
+                                        this.props.navigation.navigate('TabAbajoWithIconsWithUserProfile');
+                                      }}>
+                <Text>
+                  Tabs Android (abajo)
                 </Text>
               </Button>
 
