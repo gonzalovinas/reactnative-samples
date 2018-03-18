@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import ConfigSample from './ConfigSample';
 
 import { ScrollableTab, TabHeading, Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Tabs, Tab,  Button, Icon, Text } from 'native-base';
 import Tab1 from './SomeTab';
-
 
 export default class TabAbajoWithIconsWithUserProfile extends Component {
 
