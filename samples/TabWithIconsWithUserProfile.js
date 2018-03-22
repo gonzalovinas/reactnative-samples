@@ -7,7 +7,7 @@ import rojo from './native-base-theme/variables/rojo';
 
 import { TabContainer, StyleProvider, ScrollableTab, TabHeading, Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Tabs, Tab,  Button, Icon, Text } from 'native-base';
 import Tab1 from './SomeTab';
-
+import TabTarjetas from './TabTarjetas'
 
 export default class TabWithIconsWithUserProfile extends Component {
 
@@ -58,11 +58,7 @@ export default class TabWithIconsWithUserProfile extends Component {
             </Container>
         </Tab>
         <Tab heading="Elemento 4">
-            <Container>
-                <Text style={{textAlign: 'center'}}>
-                 <H1>Elemnto 4</H1>
-                </Text>
-            </Container>
+              <TabTarjetas />
         </Tab>
 
       </Tabs>
