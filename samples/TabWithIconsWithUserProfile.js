@@ -9,6 +9,7 @@ import { TabContainer, StyleProvider, ScrollableTab, TabHeading, Badge, H1, Cont
 import Tab1 from './SomeTab';
 import TabTarjetas from './TabTarjetas'
 
+
 export default class TabWithIconsWithUserProfile extends Component {
 
   render() {
@@ -53,11 +54,11 @@ export default class TabWithIconsWithUserProfile extends Component {
         <Tab heading={ <TabHeading><Icon name="camera" /><Text>Elemento 3</Text></TabHeading>}>
             <Container>
                 <Text style={{textAlign: 'center'}}>
-                 <H1>Elemnto 3</H1>
+                 <H1>Elemento 3</H1>
                 </Text>
             </Container>
         </Tab>
-        <Tab heading="Elemento 4">
+        <Tab heading="Elementzo 4">
               <TabTarjetas />
         </Tab>
 

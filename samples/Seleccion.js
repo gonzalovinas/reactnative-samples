@@ -37,6 +37,14 @@ export default class Seleccion extends Component {
                 </Text>
               </Button>
 
+               <Button block backgroundColor="yellow" onPress={()=> {
+                                        this.props.navigation.navigate('TarjetasPasantes');
+                                      }}>
+                <Text>
+                  Tarjetas Pasantes
+                </Text>
+              </Button>
+
 
               </Content>
 

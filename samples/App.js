@@ -21,6 +21,7 @@ import TabWithIconsWithUserProfile from './TabWithIconsWithUserProfile';
 import TabAbajoWithIconsWithUserProfile from './TabAbajoWithIconsWithUserProfile';
 import Login from './Login';
 import Seleccion from './Seleccion';
+import TarjetasPasantes from './TarjetasPasantes'
 
 import {
   StackNavigator,
@@ -45,6 +46,9 @@ export default  App = StackNavigator({
   },
   TabAbajoWithIconsWithUserProfile: {
     screen: TabAbajoWithIconsWithUserProfile,
+  },
+  TarjetasPasantes: {
+    screen: TarjetasPasantes,
   },
   Login: {
     screen: Login,
