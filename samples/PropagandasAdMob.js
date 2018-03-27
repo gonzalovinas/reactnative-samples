@@ -40,7 +40,7 @@ export default class PropagandasAdMob extends Component {
     AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId]);
     AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
 
-   /* AdMobInterstitial.addEventListener('adLoaded',
+    AdMobInterstitial.addEventListener('adLoaded',
       () => console.log('AdMobInterstitial adLoaded')
     );
     AdMobInterstitial.addEventListener('adFailedToLoad',
@@ -57,7 +57,7 @@ export default class PropagandasAdMob extends Component {
     );
     AdMobInterstitial.addEventListener('adLeftApplication',
       () => console.log('AdMobInterstitial => adLeftApplication')
-    );*/
+    );
 
     AdMobInterstitial.requestAd().catch(error => console.warn(error));
 
@@ -85,6 +85,7 @@ export default class PropagandasAdMob extends Component {
 
             <Button block backgroundColor="blue" onPress={()=> {
                                          AdMobInterstitial.showAd().catch(error => console.warn(error));
+
                                       }}>
                 <Text>
                   Mostrar Interstitial
