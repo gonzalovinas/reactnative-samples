@@ -45,6 +45,14 @@ export default class Seleccion extends Component {
                 </Text>
               </Button>
 
+               <Button block backgroundColor="gray" onPress={()=> {
+                                        this.props.navigation.navigate('PropagandasAdMob');
+                                      }}>
+                <Text>
+                  Propagandas
+                </Text>
+              </Button>
+
 
               </Content>
 
