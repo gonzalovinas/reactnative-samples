@@ -39,8 +39,11 @@ export default class TabTarjetas extends Component {
                     <Body>
                       <Text>{item.text}</Text>
                       <Text note>NativeBase</Text>
+                    
                     </Body>
                   </Left>
+                  <Thumbnail source={require('./dog.jpg')}  style={{ width: 200, height: 200, borderRadius: 200/2}}  />
+
                 </CardItem>
                 <CardItem cardBody>
                   <Image style={{ height: 300, flex: 1 }} source={item.image} />

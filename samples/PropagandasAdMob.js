@@ -75,6 +75,13 @@ export default class PropagandasAdMob extends Component {
               onAdFailedToLoad={error => console.error(error)}
             />
 
+              <AdMobBanner
+              adSize="mediumRectangle"
+              adUnitID="ca-app-pub-3940256099942544/6300978111"
+              testDevices={[AdMobBanner.simulatorId]}
+              onAdFailedToLoad={error => console.error(error)}
+            />
+
           <PublisherBanner
             adSize="Rewarded"
             adUnitID="ca-app-pub-3940256099942544/6300978111"
