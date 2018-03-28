@@ -23,6 +23,7 @@ import Login from './Login';
 import Seleccion from './Seleccion';
 import TarjetasPasantes from './TarjetasPasantes'
 import PropagandasAdMob from './PropagandasAdMob'
+import CodigoQR from './CodigoQR'
 
 import {
   StackNavigator,
@@ -53,6 +54,9 @@ export default  App = StackNavigator({
   },
   TarjetasPasantes: {
     screen: TarjetasPasantes,
+  },
+  CodigoQR: {
+    screen: CodigoQR,
   },
   Login: {
     screen: Login,
