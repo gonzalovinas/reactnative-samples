@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">samples</string>
+    <string name="fb_app_id">193705124692026</string>
+    <string name="fb_login_protocol_scheme">fb193705124692026</string>
 </resources>

@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.facebook.react.ReactApplication;
 import com.sbugert.rnadmob.RNAdMobPackage;
-import com.sbugert.rnadmob.RNAdMobPackage;
+import com.magus.fblogin.FacebookLoginPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -27,6 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
             new RNAdMobPackage(),
+            new FacebookLoginPackage(),
             new VectorIconsPackage()
       );
     }
