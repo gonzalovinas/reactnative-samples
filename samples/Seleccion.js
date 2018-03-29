@@ -63,14 +63,6 @@ export default class Seleccion extends Component {
 
 
 
-             <Button block backgroundColor="orange" onPress={()=> {
-                                      this.props.navigation.navigate('IngresoFacebook');
-                                    }}>
-              <Text>
-                Facebook Login
-              </Text>
-            </Button>
-
 
               </Content>
 

@@ -24,7 +24,6 @@ import Seleccion from './Seleccion';
 import TarjetasPasantes from './TarjetasPasantes'
 import PropagandasAdMob from './PropagandasAdMob'
 import CodigoQR from './CodigoQR'
-import IngresoFacebook from './IngresoFacebook'
 
 import {
   StackNavigator,
@@ -58,9 +57,6 @@ export default  App = StackNavigator({
   },
   CodigoQR: {
     screen: CodigoQR,
-  },
-  IngresoFacebook: {
-    screen: IngresoFacebook,
   },
   Login: {
     screen: Login,
