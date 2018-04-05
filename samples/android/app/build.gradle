@@ -137,9 +137,11 @@ android {
 }
 
 dependencies {
-    compile 'com.google.android.gms:play-services-ads:+'
+    implementation 'com.google.android.gms:play-services-base:+'
+    implementation 'com.google.android.gms:play-services-maps:+'
+
+    implementation project(':react-native-maps')
     compile project(':react-native-vector-icons')
-    compile project(':RNAdMob')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.facebook.react:react-native:+'

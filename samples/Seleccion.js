@@ -45,13 +45,6 @@ export default class Seleccion extends Component {
                 </Text>
               </Button>
 
-               <Button block backgroundColor="gray" onPress={()=> {
-                                        this.props.navigation.navigate('PropagandasAdMob');
-                                      }}>
-                <Text>
-                  Propagandas
-                </Text>
-              </Button>
 
               <Button block backgroundColor="lightblue" onPress={()=> {
                                        this.props.navigation.navigate('CodigoQR');
@@ -60,6 +53,14 @@ export default class Seleccion extends Component {
                  QR Code
                </Text>
              </Button>
+
+             <Button block backgroundColor="gray" onPress={()=> {
+                                      this.props.navigation.navigate('Mapas');
+                                    }}>
+              <Text>
+                Mapas
+              </Text>
+            </Button>
 
 
 

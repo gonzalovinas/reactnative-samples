@@ -22,8 +22,8 @@ import TabAbajoWithIconsWithUserProfile from './TabAbajoWithIconsWithUserProfile
 import Login from './Login';
 import Seleccion from './Seleccion';
 import TarjetasPasantes from './TarjetasPasantes'
-import PropagandasAdMob from './PropagandasAdMob'
 import CodigoQR from './CodigoQR'
+import Mapas from './Mapas'
 
 import {
   StackNavigator,
@@ -49,11 +49,11 @@ export default  App = StackNavigator({
   TabAbajoWithIconsWithUserProfile: {
     screen: TabAbajoWithIconsWithUserProfile,
   },
-  PropagandasAdMob: {
-    screen: PropagandasAdMob,
-  },
   TarjetasPasantes: {
     screen: TarjetasPasantes,
+  },
+  Mapas: {
+    screen: Mapas,
   },
   CodigoQR: {
     screen: CodigoQR,
