@@ -9,7 +9,7 @@
   "dependencies": {
     "native-base": "^2.3.9",
     "react": "16.2.0",
-    "react-native": "0.50.3",
+    "react-native": "0.53.0",
     "react-native-admob": "^2.0.0-beta.4",
     "react-native-facebook-login": "^1.6.1",
     "react-native-qrcode": "^0.2.6",

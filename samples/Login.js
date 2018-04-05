@@ -70,7 +70,7 @@ export default class Login extends Component {
                         </Text>
                       </Button>
 
-                      <FBLogin style={{ marginBottom: 10, }}
+                      <FBLogin 
                         ref={(fbLogin) => { this.fbLogin = fbLogin }}
                         permissions={["email","user_friends"]}
                         loginBehavior={FBLoginManager.LoginBehaviors.WebView}

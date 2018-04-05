@@ -9,26 +9,26 @@ import { DeckSwiper, Cards, Card, CardItem, ScrollableTab, TabHeading, Badge, H1
 
 const cards = [
   {
-    text: 'Card One',
+    text: 'Rocky',
     name: 'One',
     //image: require('./img/swiper-1.png')
   },
   {
-    text: 'Card Two',
+    text: 'Lui',
     name: 'Two',
   //  image: require('./img/swiper-2.png')
   }
-  
+
 ];
 
 export default class TabTarjetas extends Component {
 
- 
+
 
   render() {
     return (
       <Container>
-      
+
 <DeckSwiper
             dataSource={cards}
             renderItem={item =>
@@ -38,8 +38,7 @@ export default class TabTarjetas extends Component {
                     <Thumbnail source={item.image} />
                     <Body>
                       <Text>{item.text}</Text>
-                      <Text note>NativeBase</Text>
-                    
+
                     </Body>
                   </Left>
                   <Thumbnail source={require('./dog.jpg')}  style={{ width: 200, height: 200, borderRadius: 200/2}}  />
