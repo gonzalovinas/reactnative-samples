@@ -23,8 +23,21 @@ import MapView from 'react-native-maps';
     },
   });
 
-export default class Mapas extends Component {
+  var gps = navigator.geolocation.getCurrentPosition(
+    function(pos) {
+      alert(pos.coords.latitude);
+      alert(pos.coords.longitude);
+  },
+    function() {
+        alert('error al recuperar GPS');
+  }, {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+  });
 
+
+export default class Mapas extends Component {
 
 
 render() {
