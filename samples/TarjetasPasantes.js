@@ -5,7 +5,29 @@ import {
   ScrollView
 } from 'react-native'
 
+
+import {
+  View, StyleSheet,
+} from 'react-native';
+
+
 import { DeckSwiper, Cards, Card, CardItem, ScrollableTab, TabHeading, Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Tabs, Tab,  Button, Icon, Text } from 'native-base';
+
+  const styles = StyleSheet.create({
+    container: {
+      ...StyleSheet.absoluteFillObject,
+      height: 400,
+      width: 400,
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+    },
+    map: {
+      ...StyleSheet.absoluteFillObject,
+    },
+  });
+
+  import MapView from 'react-native-maps';
+
 
 const cards = [
   {
@@ -38,7 +60,7 @@ export default class TabTarjetas extends Component {
                     <Thumbnail source={item.image} />
                     <Body>
                       <Text>{item.text}</Text>
-
+                    
                     </Body>
                   </Left>
                   <Thumbnail source={require('./dog.jpg')}  style={{ width: 200, height: 200, borderRadius: 200/2}}  />
