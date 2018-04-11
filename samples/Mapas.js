@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 import {
-  View, StyleSheet,
+  Alert, View, StyleSheet,
 } from 'react-native';
+
+
+import { PermissionsAndroid } from 'react-native';
 
 
 import { TabContainer, Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Tabs, Tab,  Button, Icon, Text } from 'native-base';
@@ -23,22 +26,52 @@ import MapView from 'react-native-maps';
     },
   });
 
-  var gps = navigator.geolocation.getCurrentPosition(
-    function(pos) {
-      alert(pos.coords.latitude);
-      alert(pos.coords.longitude);
-  },
-    function() {
-        alert('error al recuperar GPS');
-  }, {
-    enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 0
-  });
 
+
+requestLocationPermission();
+
+   async function requestLocationPermission() {
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+        {
+          'title': 'Ubicacion',
+          'message': 'Necesitamos saber donde estas en todo momento'
+        }
+      );
+      debugger;
+      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        Alert.alert('Permisos', 'Gracias');
+
+        var gps = navigator.geolocation.getCurrentPosition(
+          function(pos) {
+            Alert.alert('Coordenada GPS', 'latitud:', pos.coords.latitude);
+            Alert.alert('Coordenada GPS', 'longitud:', pos.coords.longitude);
+
+        },
+          function() {
+            Alert.alert('Coordenada GPS', 'No pude recuperar tu ubicacion');
+        }, {
+          enableHighAccuracy: true,
+          timeout: 5000,
+          maximumAge: 0
+        });
+
+
+      } else {
+        Alert.alert('Permisos', 'No podras encontrar a tu media naranaja sin no nos compartes tu ubicacion');
+      }
+    } catch (err) {
+      Alert.alert(err);
+    }
+  }
 
 export default class Mapas extends Component {
 
+
+  async componentWillMount() {
+      await requestLocationPermission() // which always returns "You can use the camera" even if I disable camera permission access on my device
+    }
 
 render() {
 
