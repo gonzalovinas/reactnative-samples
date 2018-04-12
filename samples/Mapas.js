@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 
 
-import { PermissionsAndroid } from 'react-native';
+import { Platform, PermissionsAndroid } from 'react-native';
 
 
 import { TabContainer, Badge, H1, Container, Left, Thumbnail, Body, Title, Right, Header, Content, Tabs, Tab,  Button, Icon, Text } from 'native-base';
@@ -26,11 +26,7 @@ import MapView from 'react-native-maps';
     },
   });
 
-
-
-requestLocationPermission();
-
-   async function requestLocationPermission() {
+   async function requestAndroidLocationPermission() {
     try {
       const granted = await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
@@ -39,14 +35,12 @@ requestLocationPermission();
           'message': 'Necesitamos saber donde estas en todo momento'
         }
       );
-      debugger;
       if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-        Alert.alert('Permisos', 'Gracias');
 
         var gps = navigator.geolocation.getCurrentPosition(
           function(pos) {
-            Alert.alert('Coordenada GPS', 'latitud:', pos.coords.latitude);
-            Alert.alert('Coordenada GPS', 'longitud:', pos.coords.longitude);
+            Alert.alert('Coordenada GPS', 'latitud:' + pos.coords.latitude);
+            Alert.alert('Coordenada GPS', 'longitud:'+ pos.coords.longitude);
 
         },
           function() {
@@ -56,8 +50,6 @@ requestLocationPermission();
           timeout: 5000,
           maximumAge: 0
         });
-
-
       } else {
         Alert.alert('Permisos', 'No podras encontrar a tu media naranaja sin no nos compartes tu ubicacion');
       }
@@ -70,10 +62,14 @@ export default class Mapas extends Component {
 
 
   async componentWillMount() {
-      await requestLocationPermission() // which always returns "You can use the camera" even if I disable camera permission access on my device
+      if(Platform.OS === 'android')
+        await requestAndroidLocationPermission();
     }
 
 render() {
+
+
+
 
   return (
     <View style ={styles.container}>
