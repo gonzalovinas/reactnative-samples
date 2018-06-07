@@ -12,6 +12,7 @@ export default class TabTarjetas extends Component {
   render() {
     return (
       <Container>
+        
       <ScrollView>
       <Card>
             <CardItem>

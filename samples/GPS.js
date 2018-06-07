@@ -5,7 +5,7 @@ var castelar = [ [-34.630800, -58.627418], [-34.659191, -58.661134] ];
 var target = castelar;
 
 //var punto = $('.widget-reveal-card-lat-lng').textContent.split(',');
-var punto  = [-34.654892, -58.635591];
+var punto  = [-34.613545, -58.430444];
 
 function test(punto, cuadrante) {
 

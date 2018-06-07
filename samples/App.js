@@ -24,6 +24,8 @@ import Seleccion from './Seleccion';
 import TarjetasPasantes from './TarjetasPasantes'
 import CodigoQR from './CodigoQR'
 import Mapas from './Mapas'
+import SearchList from './SearchList'
+import Segmentos from './Segmentos'
 
 import {
   StackNavigator,
@@ -51,6 +53,13 @@ export default  App = StackNavigator({
   },
   TarjetasPasantes: {
     screen: TarjetasPasantes,
+  },
+  SearchList: {
+    screen: SearchList,
+  },
+
+  Segmentos: {
+    screen: Segmentos,
   },
   Mapas: {
     screen: Mapas,
