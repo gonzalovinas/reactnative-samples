@@ -47,8 +47,8 @@ var long, lat;
             function() {
               Alert.alert('Coordenada GPS', 'No pude recuperar tu ubicacion');
           }, {
-            enableHighAccuracy: true,
-            timeout: 5000,
+            enableHighAccuracy: false,
+            timeout: 15000,
             maximumAge: 0
           });
         } else {
