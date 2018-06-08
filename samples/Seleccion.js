@@ -78,6 +78,14 @@ export default class Seleccion extends Component {
               </Text>
             </Button>
 
+             <Button block backgroundColor="purple" onPress={()=> {
+                                      this.props.navigation.navigate('ListaSwipe');
+                                    }}>
+              <Text>
+                Lista Swipe
+              </Text>
+            </Button>
+
 
 
 

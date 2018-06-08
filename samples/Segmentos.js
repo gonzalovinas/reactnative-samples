@@ -23,7 +23,7 @@ export default class Segmentos extends Component {
               <Icon name="arrow-back" />
             </Button>
           </Left>
-         
+        
           <Right>
             <Button transparent>
               <Icon name="search" />
@@ -31,9 +31,10 @@ export default class Segmentos extends Component {
           </Right>
         </Header>
         <Content >
-        <Segment>
-              <Button ><Text>Puppies</Text></Button>
-              <Button ><Text>Cubs</Text></Button>
+        <Segment >
+              <Button style={{borderColor:'blue'}}><Text style={{color:'blue'}}>General</Text></Button>
+              <Button style={{borderColor:'blue'}}><Text style={{color:'blue'}}>Extendido</Text></Button>
+              <Button style={{borderColor:'blue'}}><Text style={{color:'blue'}}>Novedades</Text></Button>
             </Segment>
         <Container style={{alignItems: 'center'}}>
         

@@ -26,6 +26,7 @@ import CodigoQR from './CodigoQR'
 import Mapas from './Mapas'
 import SearchList from './SearchList'
 import Segmentos from './Segmentos'
+import ListaSwipe from './ListaSwipe'
 
 import {
   StackNavigator,
@@ -56,6 +57,9 @@ export default  App = StackNavigator({
   },
   SearchList: {
     screen: SearchList,
+  },
+  ListaSwipe: {
+    screen: ListaSwipe,
   },
 
   Segmentos: {
