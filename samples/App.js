@@ -27,6 +27,7 @@ import Mapas from './Mapas'
 import SearchList from './SearchList'
 import Segmentos from './Segmentos'
 import ListaSwipe from './ListaSwipe'
+import ScanQR from './ScanQR'
 
 import {
   StackNavigator,
@@ -73,6 +74,9 @@ export default  App = StackNavigator({
   },
   Login: {
     screen: Login,
+  },
+  ScanQR: {
+    screen: ScanQR,
   },
   Seleccion: {
     screen: Seleccion,

@@ -148,6 +148,10 @@ android {
 }
 
 dependencies {
+    implementation (project(':react-native-camera')) {
+        exclude group: "com.android.support"
+    }
+   
     implementation 'com.google.android.gms:play-services-base:+'
     implementation 'com.google.android.gms:play-services-maps:+'
 

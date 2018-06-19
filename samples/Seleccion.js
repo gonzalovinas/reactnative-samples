@@ -87,6 +87,15 @@ export default class Seleccion extends Component {
             </Button>
 
 
+             <Button block backgroundColor="orange" onPress={()=> {
+                                      this.props.navigation.navigate('ScanQR');
+                                    }}>
+              <Text>
+                Scan QR
+              </Text>
+            </Button>
+
+
 
 
               </Content>
