@@ -27,7 +27,7 @@ allprojects {
          configurations.all {
             resolutionStrategy {
                  // react-native-admob
-                force "com.google.android.gms:play-services-ads:11.8.0"
+                force "com.google.android.gms:play-services-ads:+"
 
                 }}
     }

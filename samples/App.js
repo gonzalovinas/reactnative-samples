@@ -27,6 +27,8 @@ import Mapas from './Mapas'
 import SearchList from './SearchList'
 import Segmentos from './Segmentos'
 import ListaSwipe from './ListaSwipe'
+import ScanQR from './ScanQR'
+import PropagandasAdMob from './PropagandasAdMob'
 
 import {
   StackNavigator,
@@ -74,8 +76,14 @@ export default  App = StackNavigator({
   Login: {
     screen: Login,
   },
+  PropagandasAdMob: {
+    screen: PropagandasAdMob,
+  },
   Seleccion: {
     screen: Seleccion,
+  },
+  ScanQR: {
+    screen: ScanQR,
   }
 }, {
     headerMode: 'none',
@@ -93,8 +101,6 @@ export default class  App extends React.Component {
     )
   }
 };*/
-
-type Props = {};
 
 /*
 export default class App extends Component<Props> {

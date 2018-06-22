@@ -3,6 +3,8 @@ package com.samples;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import org.reactnative.camera.RNCameraPackage;
+import com.sbugert.rnadmob.RNAdMobPackage;
 import com.magus.fblogin.FacebookLoginPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
@@ -25,6 +27,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNCameraPackage(),
+            new RNAdMobPackage(),
             new MapsPackage(),
             new FacebookLoginPackage(),
             new VectorIconsPackage()

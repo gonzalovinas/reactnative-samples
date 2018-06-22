@@ -48,6 +48,7 @@
 		05AA69EC9A704145966D906E /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30B39505DB8941A998EBEEC9 /* rubicon-icon-font.ttf */; };
 		BFBFB2B456A04C458B9B8941 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99E419331A5543BE982CDE40 /* SimpleLineIcons.ttf */; };
 		CE50DB6837F741898E337E7E /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1E172DA9784CA1B00B7192 /* Zocial.ttf */; };
+		659A310729114A21B6BA11F8 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDCDBBE0DB0464E9C62D7B4 /* libRNCamera.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -371,6 +372,8 @@
 		30B39505DB8941A998EBEEC9 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		99E419331A5543BE982CDE40 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		3C1E172DA9784CA1B00B7192 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CF27C72C187C44F2AAD440CB /* RNCamera.xcodeproj */ = {isa = PBXFileReference; name = "RNCamera.xcodeproj"; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		BCDCDBBE0DB0464E9C62D7B4 /* libRNCamera.a */ = {isa = PBXFileReference; name = "libRNCamera.a"; path = "libRNCamera.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +396,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				FB707B6159DD48B7A93213E4 /* libRNVectorIcons.a in Frameworks */,
 				D6BDA25AC55E4E5AAF06CBC3 /* libRNAdMobManager.a in Frameworks */,
+				659A310729114A21B6BA11F8 /* libRNCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +609,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				526501B54BB24BBA8CA77D25 /* RNVectorIcons.xcodeproj */,
 				A85C3F3274F7422AB7D0B0E5 /* RNAdMobManager.xcodeproj */,
+				CF27C72C187C44F2AAD440CB /* RNCamera.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1116,6 +1121,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
+					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 				);
 				INFOPLIST_FILE = samples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1129,6 +1135,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/samples\"",
 					"\"$(SRCROOT)/samples\"",
 				);
 			};
@@ -1144,6 +1151,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)\..\node_modules\react-native-admob\ios",
+					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 				);
 				INFOPLIST_FILE = samples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1157,6 +1165,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/samples\"",
 					"\"$(SRCROOT)/samples\"",
 				);
 			};
