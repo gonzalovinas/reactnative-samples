@@ -97,6 +97,12 @@ android {
     compileSdkVersion 27
     buildToolsVersion '27.0.3'
 
+    dexOptions {
+        // Prevent OutOfMemory with MultiDex during the build phase
+        javaMaxHeapSize = 4g
+        jumboMode = true
+    }
+
     defaultConfig {
         applicationId "com.samples"
         minSdkVersion 16
