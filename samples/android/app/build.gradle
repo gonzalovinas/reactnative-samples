@@ -104,6 +104,7 @@ android {
     }
 
     defaultConfig {
+        multiDexEnabled true
         applicationId "com.samples"
         minSdkVersion 16
         targetSdkVersion 23
@@ -154,12 +155,15 @@ android {
 }
 
 dependencies {
+    
+    compile project(':react-native-firebase')
     implementation (project(':react-native-camera')) {
         exclude group: "com.android.support"
     }
     implementation 'com.google.android.gms:play-services-base:+'
     implementation 'com.google.android.gms:play-services-maps:+'
-
+    implementation "com.google.firebase:firebase-core:16.0.1"
+     implementation "com.google.firebase:firebase-messaging:17.1.0"
     implementation project(':react-native-maps')
     compile project(':react-native-vector-icons')
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -181,3 +185,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+apply plugin: 'com.google.gms.google-services'

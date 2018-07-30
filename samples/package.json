@@ -13,6 +13,7 @@
     "react-native-admob": "^2.0.0-beta.4",
     "react-native-camera": "^1.1.4",
     "react-native-facebook-login": "^1.6.1",
+    "react-native-firebase": "^4.3.8",
     "react-native-maps": "^0.21.0",
     "react-native-qr-scanner": "^1.2.4",
     "react-native-qrcode": "^0.2.6",

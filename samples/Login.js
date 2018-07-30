@@ -6,12 +6,24 @@ import {
 
 import { AppNavigator, Root, Container, Toast, Grid, Col, Text,  Button, Icon, Header, Content, Form, Item, Input, Label } from 'native-base';
 
+import firebase from 'react-native-firebase';
+
+
 
 var { FBLogin, FBLoginManager } = require('react-native-facebook-login');
 
 
 
 export default class Login extends Component {
+
+  constructor() {
+    super()
+
+
+    
+
+  }
+
   render() {
       var _this = this;
     return (
