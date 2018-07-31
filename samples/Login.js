@@ -2,7 +2,7 @@ import React, {  Component } from 'react';
 import {
   Image,
   ScrollView
-} from 'react-native'
+} from 'react-native';
 
 import { AppNavigator, Root, Container, Toast, Grid, Col, Text,  Button, Icon, Header, Content, Form, Item, Input, Label } from 'native-base';
 
@@ -17,11 +17,20 @@ var { FBLogin, FBLoginManager } = require('react-native-facebook-login');
 export default class Login extends Component {
 
   constructor() {
-    super()
+    super();
 
+    firebase.messaging().getToken()
+      .then(fcmToken => {
+        if (fcmToken) {
+        console.log(fcmToken);
+        } else {
+        } 
+      })  
+  }
 
-    
+  componentDidMount() {
 
+    firebase.messaging().subscribeToTopic("todo");
   }
 
   render() {

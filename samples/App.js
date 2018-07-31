@@ -29,7 +29,6 @@ import Segmentos from './Segmentos'
 import ListaSwipe from './ListaSwipe'
 import ScanQR from './ScanQR'
 import PropagandasAdMob from './PropagandasAdMob'
-import firebase from 'react-native-firebase';
 
 
 import {
